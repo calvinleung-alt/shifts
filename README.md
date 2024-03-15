@@ -28,4 +28,4 @@ npm run test
 
 ### Note
 State of the data will be persisted after confirming/declining the shift, 
-restart the server application can help resetting the state
+restart the server application can help resetting the state.
