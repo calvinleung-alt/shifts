@@ -6,7 +6,7 @@
 ```
 cd ./client
 npm install
-npm run dev
+npm run start
 ```
 
 Open browser and check `localhost:3000`
@@ -17,7 +17,7 @@ Open browser and check `localhost:3000`
 ```
 cd ./server
 npm install
-npm run start:dev
+npm run start
 ```
 
 #### Test Application
@@ -25,3 +25,7 @@ npm run start:dev
 cd ./server
 npm run test
 ```
+
+### Note
+State of the data will be persisted after confirming/declining the shift, 
+restart the server application can help resetting the state
