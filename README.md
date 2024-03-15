@@ -11,7 +11,7 @@ npm run dev
 
 Open browser and check `localhost:3000`
 
-### Sever
+### Server
 
 #### Start Application
 ```
