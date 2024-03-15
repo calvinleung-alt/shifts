@@ -1,14 +1,27 @@
 # Shifts Management
 
-### Start Application
+### Client 
+
+#### Start Application
 ```
-cd client
+cd ./client
 npm install
 npm run dev
+```
 
-cd server
+Open browser and check `localhost:3000`
+
+### Sever
+
+#### Start Application
+```
+cd ./server
 npm install
 npm run start:dev
 ```
 
-Open browser and check `localhost:3000`
+#### Test Application
+```
+cd ./server
+npm run test
+```
