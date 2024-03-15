@@ -1,12 +1,21 @@
 # Shifts Management
 
+## Production Build
+
+### Start Application
+```
+docker-compose up -d
+```
+
+## Development Mode
+
 ### Client 
 
 #### Start Application
 ```
 cd ./client
 npm install
-npm run start
+npm run dev
 ```
 
 Open browser and check `localhost:3000`
@@ -17,7 +26,7 @@ Open browser and check `localhost:3000`
 ```
 cd ./server
 npm install
-npm run start
+npm run start:dev
 ```
 
 #### Test Application
