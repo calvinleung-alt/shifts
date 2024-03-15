@@ -6,12 +6,8 @@ services:
       context: ./client
     ports:
       - 3000:3000
-    volumes:
-      - ./client:/app
   server:
     build:
       context: ./server
     ports:
       - 3001:3001
-    volumes:
-      - ./server:/app
