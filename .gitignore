@@ -17,7 +17,7 @@ server/yarn-error.log*
 server/lerna-debug.log*
 
 # OS
-server/.DS_Store
+.DS_Store
 
 # Tests
 server/coverage
