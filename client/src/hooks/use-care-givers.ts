@@ -1,6 +1,7 @@
 'use client'
 
 import { CareGiver } from "@/types/care-giver";
+import fetcher from "@/utils/fetcher";
 import { useEffect, useState } from "react";
 
 export default function useCareGivers() {
@@ -8,7 +9,7 @@ export default function useCareGivers() {
 
     const fetchCaregivers = async () => {
         try {
-            const res = await fetch('api/caregivers');
+            const res = await fetcher(`api/caregivers`);
             const data = await res.json();
             setData(data);
         } catch (error) {
@@ -18,7 +19,7 @@ export default function useCareGivers() {
 
     const update = async (userId: number, caregiver: CareGiver) => {
         try {
-            const res = await fetch(`api/caregivers/${userId}`, {
+            const res = await fetcher(`api/caregivers/${userId}`, {
                 method: 'PUT',
                 body: JSON.stringify(caregiver),
             });
@@ -30,7 +31,7 @@ export default function useCareGivers() {
 
     const bulkUpdate = async (args: { userId: number, caregiver: CareGiver }[]) => {
         try {
-            const res = await fetch(`api/caregivers/bulk-update`, {
+            const res = await fetcher(`api/caregivers/bulk-update`, {
                 method: 'PUT',
                 body: JSON.stringify(args),
             });
