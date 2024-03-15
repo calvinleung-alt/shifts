@@ -14,12 +14,6 @@ FROM node:18
 
 WORKDIR /app
 
-COPY package.json package-lock.json ./
-
-RUN npm install
-
-COPY . .
-
-COPY --from=builder /app/dist ./dist
+COPY --from=builder /app ./
 
 CMD ["npm", "run", "start:prod"]
