@@ -22,6 +22,6 @@ RUN npm install
 
 COPY . .
 
-COPY --from=builder /app/public ./public
+COPY --from=builder /app ./
 
 CMD ["npm", "run", "start"]
