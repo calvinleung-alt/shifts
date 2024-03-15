@@ -1,6 +1,6 @@
 # Shifts Management
 
-## Start Application
+## Start
 ```
 docker compose up -d
 ```
