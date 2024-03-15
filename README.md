@@ -26,6 +26,8 @@ cd ./server
 npm run test
 ```
 
+Endpoint will be hosted at `localhost:3001`
+
 ### Note
 State of the data will be persisted after confirming/declining the shift, 
 restart the server application can help resetting the state.
